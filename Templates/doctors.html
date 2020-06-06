@@ -39,7 +39,7 @@
 				<div class="float-right">
 					<ul class="right_side">
 						<li>
-							<a href="#">
+							<a href="login.html">
 								<i class="lnr lnr-phone-handset"></i>
 								+66-5446-6666 ต่อ 7000
 							</a>
@@ -73,25 +73,25 @@
 							<div class="col-lg-12 pr-0">
 								<ul class="nav navbar-nav center_nav pull-right">
 									<li class="nav-item">
-										<a class="nav-link" href="index.html">หน้าหลัก</a>
-									</li>
-									<li class="nav-item active">
-										<a class="nav-link" href="departments.html">การบริการ</a>
+										<a class="nav-link" href="{{ url_for('index') }}">หน้าหลัก</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="doctors.html">บุคลากร </a>
+										<a class="nav-link" href="{{ url_for('departments') }}">การบริการ</a>
+									</li>
+									<li class="nav-item active">
+										<a class="nav-link" href="{{ url_for('doctors') }}">บุคลากร</a>
 									</li>
 									<li class="nav-item submenu dropdown">
 										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">หน่วยงาน</a>
 										<ul class="dropdown-menu">
 											<li class="nav-item">
-												<a class="nav-link" href="about.html">เกี่ยวกับเรา</a>
+												<a class="nav-link" href="{{ url_for('about') }}">เกี่ยวกับเรา</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="services.html">การบริการ</a>
+												<a class="nav-link" href="{{ url_for('services') }}">การบริการ</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="elements.html">โครงสร้างหน่วยงาน</a>
+												<a class="nav-link" href="{{ url_for('elements') }}">โครงสร้างหน่วยงาน</a>
 											</li>
 										</ul>
 									</li>
@@ -99,15 +99,15 @@
 										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
 										<ul class="dropdown-menu">
 											<li class="nav-item">
-												<a class="nav-link" href="blog.html">Blog</a>
+												<a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
 											</li>
 											<li class="nav-item">
-												<a class="nav-link" href="single-blog.html">Blog Details</a>
+												<a class="nav-link" href="{{ url_for('singleblog') }}">Blog Details</a>
 											</li>
 										</ul>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="contact.html">ติดต่อเรา</a>
+										<a class="nav-link" href="{{ url_for('contact') }}">ติดต่อเรา</a>
 									</li>
 								</ul>
 							</div>
@@ -124,7 +124,7 @@
 		<div class="banner_inner d-flex align-items-center">
 			<div class="container">
 				<div class="banner_content text-left">
-					<h2>การให้บริการทางการแพทย์</h2>
+					<h2>ข้อมูลบุคลากรทั้งหมด</h2>
 					
 				</div>
 			</div>
@@ -132,107 +132,218 @@
 	</section>
 	<!--================End Banner Area =================-->
 
-	<!--================ Procedure Category Area =================-->
-	<section class="procedure_category section_gap_custom">
+	<!-- Start team Area -->
+	<section class="team-area section_gap">
 		<div class="container">
 			<div class="row justify-content-center section-title-wrap">
 				<div class="col-lg-12">
-					<h1>Procedure Category</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					</p>
+					<h1>ผู้บริหาร</h1>
+					<p> </p>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="col-lg-4 mb-30">
-					<div class="categories_post">
-						<img src="img/procedure/p1.jpg" alt="Procedure">
-						<div class="categories_details">
-							<div class="categories_text">
-								<div class="border_line"></div>
-								<a href="single-blog.html">
-									<h5>Emergency Treatment</h5>
+			<div class="row justify-content-center d-flex align-items-center">
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="img/Smore.jpg" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
 								</a>
-								<div class="border_line"></div>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+
 							</div>
+							<p>
+								รักษาการแทนผู้อำนวยการฯ
+							</p>
+							<h4>รองศาสตราจารย์ ดร.เสมอ ถาน้อย</h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-30">
-					<div class="categories_post">
-						<img src="img/procedure/p2.jpg" alt="Procedure">
-						<div class="categories_details">
-							<div class="categories_text">
-								<div class="border_line"></div>
-								<a href="single-blog.html">
-									<h5>Emergency Treatment</h5>
+				
+				
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="img/t2.jpg" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
 								</a>
-								<div class="border_line"></div>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a>
 							</div>
+							<p>
+								inappropriate behavior
+							</p>
+							<h4>Andy Florence</h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-30">
-					<div class="categories_post">
-						<img src="img/procedure/p3.jpg" alt="Procedure">
-						<div class="categories_details">
-							<div class="categories_text">
-								<div class="border_line"></div>
-								<a href="single-blog.html">
-									<h5>Emergency Treatment</h5>
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="img/t3.jpg" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
 								</a>
-								<div class="border_line"></div>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a>
 							</div>
+							<p>
+								inappropriate behavior
+							</p>
+							<h4>Andy Florence</h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="categories_post">
-						<img src="img/procedure/p1.jpg" alt="Procedure">
-						<div class="categories_details">
-							<div class="categories_text">
-								<div class="border_line"></div>
-								<a href="single-blog.html">
-									<h5>Emergency Treatment</h5>
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="img/t4.jpg" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
 								</a>
-								<div class="border_line"></div>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a>
 							</div>
+							<p>
+								inappropriate behavior
+							</p>
+							<h4>Andy Florence</h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-30">
-					<div class="categories_post">
-						<img src="img/procedure/p2.jpg" alt="Procedure">
-						<div class="categories_details">
-							<div class="categories_text">
-								<div class="border_line"></div>
-								<a href="single-blog.html">
-									<h5>Emergency Treatment</h5>
+				<div class="col-lg-3 col-md-6 single-team">
+					<div class="thumb">
+						<img class="img-fluid" src="img/t1.jpg" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
 								</a>
-								<div class="border_line"></div>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a>
 							</div>
+							<p>
+								inappropriate behavior
+							</p>
+							<h4>Andy Florence</h4>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 mb-30">
-					<div class="categories_post">
-						<img src="img/procedure/p3.jpg" alt="Procedure">
-						<div class="categories_details">
-							<div class="categories_text">
-								<div class="border_line"></div>
-								<a href="single-blog.html">
-									<h5>Emergency Treatment</h5>
+				<div class="col-lg-3 col-md-6 single-team">
+					<div class="thumb">
+						<img class="img-fluid" src="img/t2.jpg" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
 								</a>
-								<div class="border_line"></div>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a>
 							</div>
+							<p>
+								inappropriate behavior
+							</p>
+							<h4>Andy Florence</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 single-team">
+					<div class="thumb">
+						<img class="img-fluid" src="img/t3.jpg" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a>
+							</div>
+							<p>
+								inappropriate behavior
+							</p>
+							<h4>Andy Florence</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 single-team">
+					<div class="thumb">
+						<img class="img-fluid" src="img/t4.jpg" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a>
+							</div>
+							<p>
+								inappropriate behavior
+							</p>
+							<h4>Andy Florence</h4>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================ End Procedure Category Area =================-->
+	<!-- End team Area -->
 
 	<!-- start footer Area -->
 	<footer class="footer-area section_gap">
