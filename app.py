@@ -42,7 +42,6 @@ def singleblog():
     return render_template('single-blog.html')
 
     
-
 # Debug Code
 if __name__ == "__main__":
     app.debug = True
