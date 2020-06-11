@@ -41,6 +41,27 @@ def blog():
 def singleblog():
     return render_template('single-blog.html')
 
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
+@app.route("/edit")
+def edit():
+   return render_template('edit.html')
+
+# @app.route("/#")
+#def #():
+#   return render_template('#.html')
+
+# @app.route("/#")
+#def #():
+#   return render_template('#.html')
+
+# @app.route("/#")
+#def #():
+#   return render_template('#.html')
+
+
     
 # Debug Code
 if __name__ == "__main__":

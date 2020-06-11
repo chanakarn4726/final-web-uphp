@@ -56,6 +56,10 @@
 						</li>
 					</ul>
 				</div>
+				
+				
+
+
 			</div>
 		</div>
 		<div class="main_menu">
@@ -100,10 +104,10 @@
 										</ul>
 									</li>
 									<li class="nav-item submenu dropdown">
-										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ข้อมูลภายใน</a>
 										<ul class="dropdown-menu">
 											<li class="nav-item">
-												<a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
+												<a class="nav-link" href="{{ url_for('blog') }}">กิจกรรม</a>
 											</li>
 											<li class="nav-item">
 												<a class="nav-link" href="{{ url_for('singleblog') }}">วิสัยทัศน์และพันธกิจ</a>
@@ -127,6 +131,9 @@
 	<section class="home_banner_area">
 		<div class="banner_inner d-flex align-items-center">
 			<div class="container">
+				
+				
+
 				<div class="banner_content row">
 					<div class="col-lg-12">
 						<h1>ยินดีต้อนรับสู่เว็บไซต์</h1>
@@ -147,7 +154,7 @@
 					<div class="col-lg-12">
 						<h1>การให้บริการทางการแพทย์</h1>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						<!-- ใส่ข้อความ -->
 						</p>
 					</div>
 				</div>
@@ -155,12 +162,12 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="categories_post">
-							<img src="{{ url_for('static',filename='img/procedure/p1.jpg') }}" alt="Procedure">
+							<img src="{{ url_for('static',filename='img/ele1.jpg') }}" alt="Procedure">
 							<div class="categories_details">
 								<div class="categories_text">
 									<div class="border_line"></div>
 									<a href="departments.html">
-										<h5>Emergency Treatment</h5>
+										<h5>แพทย์แผนไทย</h5>
 									</a>
 									<div class="border_line"></div>
 								</div>
@@ -169,12 +176,12 @@
 					</div>
 					<div class="col-lg-4">
 						<div class="categories_post">
-							<img src="{{ url_for('static',filename='img/procedure/p2.jpg') }}" alt="Procedure">
+							<img src="{{ url_for('static',filename='img/ele3.jpg') }}" alt="Procedure">
 							<div class="categories_details">
 								<div class="categories_text">
 									<div class="border_line"></div>
 									<a href="departments.html">
-										<h5>Emergency Treatment</h5>
+										<h5>บริการตรวจสุขภาพ</h5>
 									</a>
 									<div class="border_line"></div>
 								</div>
@@ -183,12 +190,12 @@
 					</div>
 					<div class="col-lg-4">
 						<div class="categories_post">
-							<img src="{{ url_for('static',filename='img/procedure/p3.jpg') }}" alt="Procedure">
+							<img src="{{ url_for('static',filename='img/ele4.jpg') }}" alt="Procedure">
 							<div class="categories_details">
 								<div class="categories_text">
 									<div class="border_line"></div>
 									<a href="departments.html">
-										<h5>Emergency Treatment</h5>
+										<h5>ผู้ป่วยใน</h5>
 									</a>
 									<div class="border_line"></div>
 								</div>
@@ -205,9 +212,9 @@
 		<div class="container">
 			<div class="row justify-content-center section-title-wrap">
 				<div class="col-lg-12">
-					<h1>Enjoy our Client’s Feedback</h1>
+					<h1>แนะนำส่วนต่างๆ</h1>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						#######
 					</p>
 				</div>
 			</div>
@@ -216,103 +223,91 @@
 				<div class="active-review-carusel owl-carousel">
 					<div class="row">
 						<div class="col-lg-6">
-							<img src="{{ url_for('static',filename='img/feedback-bg.jpg') }}" alt="">
+						<img src="{{ url_for('static',filename='img/tem2.jpg') }}" alt="">
 						</div>
-
-						<div class="col-lg-6">
+						 <div class="col-lg-6">
 							<div class="single-feedback-carusel">
-								<div class="d-flex flex-row">
-									<h4 class="">Fannie Rowe</h4>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
+								
 								<p class="">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can
-									find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+									บรรยากาศภายนอก
 								</p>
 							</div>
-						</div>
+						</div> -->
 					</div>
-
 					<div class="row">
 						<div class="col-lg-6">
-							<img src="{{ url_for('static',filename='img/feedback-bg.jpg') }}" alt="">
+							<img src="{{ url_for('static',filename='img/tem3.jpg') }}" alt="">
 						</div>
 
 						<div class="col-lg-6">
 							<div class="single-feedback-carusel">
-								<div class="d-flex flex-row">
-									<h4 class="">Fannie Rowe</h4>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
+								
 								<p class="">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can
-									find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+									บรรยากาศภายนอก
 								</p>
 							</div>
 						</div>
 					</div>
-
 					<div class="row">
 						<div class="col-lg-6">
-							<img src="{{ url_for('static',filename='img/feedback-bg.jpg') }}" alt="">
+							<img src="{{ url_for('static',filename='img/tem4.jpg') }}" alt="">
 						</div>
 
 						<div class="col-lg-6">
 							<div class="single-feedback-carusel">
-								<div class="d-flex flex-row">
-									<h4 class="">Fannie Rowe</h4>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
+								
 								<p class="">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can
-									find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+									บรรยากาศภายใน
 								</p>
 							</div>
 						</div>
 					</div>
-
 					<div class="row">
 						<div class="col-lg-6">
+							<img src="{{ url_for('static',filename='img/tem5.jpg') }}" alt="">
+						</div>
+
+						<div class="col-lg-6">
+							<div class="single-feedback-carusel">
+								
+								<p class="">
+									บรรยากาศภายใน 
+								</p>
+							</div>
+						</div>
+					</div>  -->
+					<!--<div class="row">
+						<div class="col-lg-6">
+							<img src="{{ url_for('static',filename='img/tem5.jpg') }}" alt="">
+						</div>
+
+						<div class="col-lg-6">
+							<div class="single-feedback-carusel">
+								
+								<p class="">
+									บรรยากาศภายใน 
+								</p>
+							</div>
+						</div>
+					</div>  
+					<!-- <div class="row">
+						<div class="col-lg-6">
 							<img src="{{ url_for('static',filename='img/feedback-bg.jpg') }}" alt="">
 						</div>
 
 						<div class="col-lg-6">
 							<div class="single-feedback-carusel">
-								<div class="d-flex flex-row">
-									<h4 class="">Fannie Rowe</h4>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-									</div>
-								</div>
+								
 								<p class="">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can
-									find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
+									เพิ่มคำอธิบายภาพ
 								</p>
 							</div>
 						</div>
-					</div>
+					</div>  -->
+
+
+
+					
 				</div>
 			</div>
 		</div>
@@ -324,22 +319,22 @@
 		<div class="container">
 			<div class="row justify-content-center section-title-wrap">
 				<div class="col-lg-12">
-					<h1>Our Offered Services</h1>
-					<p>
+					<h1>การให้บริการในส่วนต่างๆ</h1>
+					<!--p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					</p>
+					</p-->
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-lg-3 col-md-6">
 					<div class="single_service">
-						<span class="lnr lnr-rocket"></span>
+						<span class="lnr lnr-car"></span>
 						<a href="#">
-							<h4>24/7 Emergency</h4>
+							<h4>แผนกฉุกเฉิน 24Hr</h4>
 						</a>
 						<p>
-							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+							แผนกฉุกเฉินทำงานตลอด 24 ชั่วโมง ไม่เว้นวันหยุดราชการ พร้อมรถรับส่งผู้ป่วย
 						</p>
 					</div>
 				</div>
@@ -347,21 +342,10 @@
 					<div class="single_service">
 						<span class="lnr lnr-heart-pulse"></span>
 						<a href="#">
-							<h4>Expert Consultation</h4>
+							<h4>มีแพทย์ผู้เชี่ยวชาญประจำการ</h4>
 						</a>
 						<p>
-							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
-						</p>
-					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="single_service">
-						<span class="lnr lnr-bug"></span>
-						<a href="#">
-							<h4>Intensive Care</h4>
-						</a>
-						<p>
-							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+							ผู้เชี่ยวชาญที่มีประสบการณ์ประจำการ
 						</p>
 					</div>
 				</div>
@@ -369,10 +353,10 @@
 					<div class="single_service">
 						<span class="lnr lnr-users"></span>
 						<a href="#">
-							<h4>Family Planning</h4>
+							<h4>บริการสำหรับญาติ</h4>
 						</a>
 						<p>
-							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct women face higher conduct.
+							ห้องรับรองสำหรับผู้มาเยี่ยมไข้
 						</p>
 					</div>
 				</div>
@@ -388,29 +372,21 @@
 			<div class="row justify-content-between align-items-center appointment-wrap">
 				<div class="col-lg-5 col-md-6 appointment-left">
 					<h1>
-						Servicing Hours
+						วันเวลาทำการ
 					</h1>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						วันจันทร์ 8.00 น. ถึง 16.00 น. <br>
+						วันอังคาร 8.00 น. ถึง 16.00 น. <br>
+						วันพุธ 8.00 น. ถึง 16.00 น. <br>
+						วันพฤหัสบดี 8.00 น. ถึง 16.00 น. <br>
+						วันศุกร์ 8.00 น. ถึง 16.00 น. <br>
+						วันเสาร์ 8.00 น. ถึง 16.00 น. <br>
+						วันอาทิตย์ 8.00 น. ถึง 16.00 น. <br>
 					</p>
-					<ul class="time-list">
-						<li class="d-flex justify-content-between">
-							<span>Monday-Friday</span>
-							<span>08.00 am - 10.00 pm</span>
-						</li>
-						<li class="d-flex justify-content-between">
-							<span>Saturday</span>
-							<span>08.00 am - 10.00 pm</span>
-						</li>
-						<li class="d-flex justify-content-between">
-							<span>Sunday</span>
-							<span>08.00 am - 10.00 pm</span>
-						</li>
-					</ul>
 				</div>
 				<div class="col-lg-6 col-md-6 pt-60 pb-60">
 					<div class="appointment-right">
-						<form class="form-wrap" action="#">
+						<!--form class="form-wrap" action="#">
 							<h3 class="pb-20 text-center mb-20">Book an Appointment</h3>
 							<input type="text" class="form-control" name="name" placeholder="Patient Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Patient Name'">
 							<input type="text" class="form-control" name="phone" placeholder="Phone " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'">
@@ -430,7 +406,7 @@
 							<div class="text-center confirm_btn_box">
 								<button class="main_btn text-uppercase">Confirm Booking</button>
 							</div>
-						</form>
+						</form> --> 
 					</div>
 				</div>
 			</div>
@@ -517,23 +493,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2  col-md-6">
-					<div class="single-footer-widget">
-						<h6>Top Products</h6>
-						<ul class="footer-nav">
-							<li>
-								<a href="#">Managed Website</a>
-							</li>
-							<li>
-								<a href="#">Manage Reputation</a>
-							</li>
-							<li>
-								<a href="#">Power Tools</a>
-							</li>
-							<li>
-								<a href="#">Marketing Service</a>
-							</li>
-						</ul>
-					</div>
+					
 				</div>
 				<div class="col-lg-4  col-md-6">
 					<div class="single-footer-widget mail-chimp">
@@ -544,31 +504,12 @@
 						<p>โทรศัพท์       0 5446 6758</p>
 						<p>ฉุกเฉิน  0 5446 6757</p>
 						<p>			0 5446 6666 ต่อ 7000</p>
+						http://upmed.up.ac.th/ 	<br>
 					</div>
 				</div>
 				<div class="col-lg-6  col-md-12">
 					<div class="single-footer-widget newsletter">
-						<h6>Newsletter</h6>
-						<p>You can trust us. we only send promo offers, not a single spam.</p>
-						<div id="mc_embed_signup">
-							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="form-inline">
-
-								<div class="form-group row">
-									<div class="col-lg-7 col-md-6 col-sm-12">
-										<input name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
-										 required="" type="email">
-									</div>
-
-									<div class="col-lg-5 col-md-12">
-										<button class="nw-btn main_btn circle">get started
-											<span class="lnr lnr-arrow-right"></span>
-										</button>
-									</div>
-								</div>
-								<div class="info"></div>
-							</form>
-						</div>
+						
 					</div>
 				</div>
 			</div>

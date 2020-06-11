@@ -1,6 +1,6 @@
 git add .
 
-git commit -m "ใส่คอมเมน"
+git commit -m "comment"
 
 git push -u origin master
 
