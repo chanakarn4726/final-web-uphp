@@ -9,7 +9,7 @@
     <title>UP MED</title>
 
 
-    <section class="product spad">
+    <!-- <section class="product spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-5">
@@ -29,6 +29,13 @@
                                 <li><a href="#">Oatmeal</a></li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
 
     <!-- Hero Section Begin -->
     <section class="hero">
@@ -38,10 +45,10 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>All departments</span>
+                            <span>รายการ</span>
                         </div>
-                        <ul>
-                            <li><a href="#">Fresh Meat</a></li>
+                        <ul>  <!-- เอาไว้เลือกหน้าที่จะแก้ -->
+                            <li><a href="#">หน้าหลัก</a></li>
                             <li><a href="#">Vegetables</a></li>
                             <li><a href="#">Fruit & Nut Gifts</a></li>
                             <li><a href="#">Fresh Berries</a></li>
@@ -55,9 +62,115 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
     <!-- Hero Section End -->
+
+
+    <!-- เซต ปุ่มกลางรูป  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+</style>
 </head>
+<body>
+
+<h2>เพิ่มรูปภาพ</h2>
+<!-- <p>Add a button to an image:</p> -->
+
+<div class="container">
+  <img src="{{ url_for('static',filename='img/homer.jpg') }}" alt="Snow" style="width:100%">
+  <button class="btn">เพิ่มรูปภาพ</button>
+</div>
+        <!------------------------------------------------------------------------------- เซต ปุ่มกลางรูป  -->
+        <!--------------------------------------------------------------------------------- search box 
+        <style>
+            * {box-sizing: border-box;}
+            
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .topnav {
+              overflow: hidden;
+              background-color: #e9e9e9;
+            }
+            
+            .topnav a {
+              float: left;
+              display: block;
+              color: black;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+            
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+            
+            .topnav a.active {
+              background-color: #2196F3;
+              color: white;
+            }
+            
+            .topnav .search-container {
+              float: right;
+            }
+            
+            .topnav input[type=text] {
+              padding: 6px;
+              margin-top: 8px;
+              font-size: 17px;
+              border: none;
+            }
+            
+            .topnav .search-container button {
+              float: right;
+              padding: 6px 10px;
+              margin-top: 8px;
+              margin-right: 16px;
+              background: #ddd;
+              font-size: 17px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            .topnav .search-container button:hover {
+              background: #ccc;
+            }
+</head>  -->
+
