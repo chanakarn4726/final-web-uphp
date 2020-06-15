@@ -23,7 +23,7 @@
 
 <body>
 
-	<!--================Header Menu Area =================-->
+	<!--===========------------------------------------------------------------------------------------------------------------=====Header Menu Area =================-->
 	<header class="header_area">
 		<div class="top_menu row m0">
 			<div class="container">
@@ -118,22 +118,117 @@
 						</div>
 					</div>
 				</div>
+					<!------------------------------------------------------------------------------------------------------------------------------------ search box -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	* {box-sizing: border-box;}
+	
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	.topnav {
+	  overflow: hidden;
+	  background-color: white;
+	}
+	
+	.topnav a {
+	  float: left;
+	  display: block;
+	  color: black;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	
+	.topnav a:hover {
+	  background-color: white;
+	  color: black;
+	}
+	
+	.topnav a.active {
+	  background-color: #2196F3;
+	  color: white;
+	}
+	
+	.topnav .search-container {
+	  float: right;
+	}
+	
+	.topnav input[type=text] {
+	  padding: 6px;
+	  margin-top: 8px;
+	  font-size: 17px;
+	  border: none;
+	}
+	
+	.topnav .search-container button {
+	  float: right;
+	  padding: 6px 10px;
+	  margin-top: 8px;
+	  margin-right: 16px;
+	  background: white;
+	  font-size: 17px;
+	  border: none;
+	  cursor: pointer;
+	}
+	
+	.topnav .search-container button:hover {
+	  background:  white;
+	}
+	
+	@media screen and (max-width: 600px) {
+	  .topnav .search-container {
+		float: none;
+	  }
+	  .topnav a, .topnav input[type=text], .topnav .search-container button {
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px;
+	  }
+	  .topnav input[type=text] {
+		border: 1px solid white;  
+	  }
+	}
+	</style>
+	</head>
+	<body>
+	
+	<div class="topnav">
+	  <div class="search-container">
+		<form action="/action_page.php">
+		  <input type="text" placeholder="Search.." name="search">
+		  <button type="submit"><i class="fa fa-search"></i></button>
+		</form>
+	  </div>
+	</div>
+	
+	
+	</body>
+		<!------------------------------------------------------------------------------------------------------------- search box -->
 			</nav>
 		</div>
 	</header>
-	<!--================Header Menu Area =================-->
+	<!--=========------------------------------------------------------------------------------------------------------------=======Header Menu Area =================-->
 
 
 
-	<!--================ Banner Area =================-->
+	<!--=====------------------------------------------------------------------------------------------------------------=========== Banner Area =================-->
 	<section class="banner_area">
 		<div class="banner_inner d-flex align-items-center">
 			<div class="container">
 				<div class="banner_content text-left">
 					<h2>ข้อมูลบุคลากร</h2>
+					<a href="#">คณะผู้บริหาร , ฝ่ายการแพทย์ , สำนักงานผู้อำนวยการ , ฝ่ายการพยาบาล , ฝ่ายการแพทย์แผนจีน , ฝ่ายการแพทย์แผนไทยประยุกต์ , ฝ่ายการบริการเภสัชกรรม , ฝ่ายสหเวชกรรม , โรงพยาบาลทันตกรรม </a>
 
 
-						<!--sraech-->
+						<!--sraech
 						<div class="search-container"></div>
 						  <form action="/action_page.php">
 							<input type="text" placeholder="Search.." name="search">
@@ -147,117 +242,24 @@
 			</div>
 		</div>
 	</section>
-	<!--==============================================================End Banner Area ==-->
-
-	<!---------------------------------------------------------------------- search box -->
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-* {box-sizing: border-box;}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav .search-container {
-    float: none;
-  }
-  .topnav a, .topnav input[type=text], .topnav .search-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-</style>
-</head>
-<body>
-
-<div class="topnav">
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</div>
+	<!--================------------------------------------==============================================End Banner Area ==-->
 
 
-</body>
-	<!------------------------------------------------------------------------- search box -->
 
-	<!-------------------------------------------------------------------- Start team Area -->
+	<!-------------------------------------------------------------------------------------------------------- Start team Area -->
 	<section class="team-area section_gap">
 		<div class="container">
 			<div class="row justify-content-center section-title-wrap">
 				<div class="col-lg-12">
-					<h1>ผู้บริหาร</h1>
+					<h1>คณะผู้บริหาร</h1>
 					<p> </p>
 				</div>
 			</div>
 
-			<div class="row justify-content-center d-flex align-items-center">
-				<div class="col-lg-3 col-md-6 single-team mb-50">
+				<center> 
+				<div class="col-lg-3 col-md-6 single-team mb-50"> 
 					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/Smore.jpg') }}" alt="">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/board/1.jpg') }}" alt="">
 						<div class="align-items-end justify-content-center d-flex">
 							<div class="social-links">
 								 <!-- <a href="#">
@@ -274,12 +276,38 @@ body {
 							<h4>รองศาสตราจารย์ ดร.เสมอ ถาน้อย</h4>
 						</div>
 					</div>
+				</div>  </center>
+
+			<div class="row justify-content-center d-flex align-items-center"> 	
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/board/2.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								รักษาการแทนรองผู้อำนวยการฯ
+							</p>
+							<h4>นายแพทย์กมล ทรายสมุทร</h4>
+						</div>
+					</div>
 				</div>
-				
 				
 				<div class="col-lg-3 col-md-6 single-team mb-50">
 					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/board/3.jpg') }}" alt="">
 						<div class="align-items-end justify-content-center d-flex">
 							<div class="social-links">
 								<!-- <a href="#">
@@ -296,162 +324,148 @@ body {
 								</a> -->
 							</div>
 							<p>
-								ตำแหน่ง
+								รักษาการแทนรองผู้อำนวยการฯ
 							</p>
-							<h4>ชื่อ นามสกุล</h4>
-						</div>
-					</div>
-				</div>				<div class="col-lg-3 col-md-6 single-team mb-50">
-					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
-						<div class="align-items-end justify-content-center d-flex">
-							<div class="social-links">
-								<!-- <a href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-dribbble"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-behance"></i>
-								</a> -->
-							</div>
-							<p>
-								ตำแหน่ง
-							</p>
-							<h4>ชื่อ นามสกุล</h4>
-						</div>
-					</div>
-				</div>				<div class="col-lg-3 col-md-6 single-team mb-50">
-					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
-						<div class="align-items-end justify-content-center d-flex">
-							<div class="social-links">
-								<!-- <a href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-dribbble"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-behance"></i>
-								</a> -->
-							</div>
-							<p>
-								ตำแหน่ง
-							</p>
-							<h4>ชื่อ นามสกุล</h4>
-						</div>
-					</div>
-				</div>				<div class="col-lg-3 col-md-6 single-team mb-50">
-					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
-						<div class="align-items-end justify-content-center d-flex">
-							<div class="social-links">
-								<!-- <a href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-dribbble"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-behance"></i>
-								</a> -->
-							</div>
-							<p>
-								ตำแหน่ง
-							</p>
-							<h4>ชื่อ นามสกุล</h4>
-						</div>
-					</div>
-				</div>				<div class="col-lg-3 col-md-6 single-team mb-50">
-					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
-						<div class="align-items-end justify-content-center d-flex">
-							<div class="social-links">
-								<!-- <a href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-dribbble"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-behance"></i>
-								</a> -->
-							</div>
-							<p>
-								ตำแหน่ง
-							</p>
-							<h4>ชื่อ นามสกุล</h4>
-						</div>
-					</div>
-				</div>				<div class="col-lg-3 col-md-6 single-team mb-50">
-					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
-						<div class="align-items-end justify-content-center d-flex">
-							<div class="social-links">
-								<!-- <a href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-dribbble"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-behance"></i>
-								</a> -->
-							</div>
-							<p>
-								ตำแหน่ง
-							</p>
-							<h4>ชื่อ นามสกุล</h4>
-						</div>
-					</div>
-				</div>				<div class="col-lg-3 col-md-6 single-team mb-50">
-					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
-						<div class="align-items-end justify-content-center d-flex">
-							<div class="social-links">
-								<!-- <a href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-dribbble"></i>
-								</a>
-								<a href="#">
-									<i class="fa fa-behance"></i>
-								</a> -->
-							</div>
-							<p>
-								ตำแหน่ง
-							</p>
-							<h4>ชื่อ นามสกุล</h4>
+							<h4>นายแพทย์สรวิศ บุญญฐี</h4>
 						</div>
 					</div>
 				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/board/4.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								รักษาการแทนรองผู้อำนวยการฯ
+							</p>
+							<h4>นางอังคณา ปานเทือก</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/board/5.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								รักษาการแทนผู้ช่วยผู้อำนวยการฯ
+							</p>
+							<h4>ดร.สุทธิดา พงษ์พันธ์งาม</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/board/6.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								รักษาการแทนผู้ช่วยผู้อำนวยการฯ
+							</p>
+							<h4>ดร.ปาจรีย์ มงคล</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/board/7.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								รักษาการแทนผู้ช่วยผู้อำนวยการฯ
+							</p>
+							<h4>ดร.สุรชาติ พุทธิษา</h4>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> 
+							</div>
+							<p>
+								ตำแหน่ง
+							</p>
+							<h4>ชื่อ นามสกุล</h4>
+						</div>
+					</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
-	<!-- End team Area -->
+	<!-------------------------------------------------------------------------------------------------------------- End team Area -->
 
-	<!-- Start team Area -->
+	<!-------------------------------------------------------------------------------------------------------------- Start team Area -->
 	<section class="team-area section_gap">
 		<div class="container">
 			<div class="row justify-content-center section-title-wrap">
@@ -672,9 +686,9 @@ body {
 			</div>
 		</div>
 	</section>
-	<!-- End team Area -->
+	<!-------------------------------------------------------------------------------------------------------------- End team Area -->
 	
-	<!-- Start team Area -->
+	<!-------------------------------------------------------------------------------------------------------------- Start team Area -->
 	<section class="team-area section_gap">
 		<div class="container">
 			<div class="row justify-content-center section-title-wrap">
@@ -684,10 +698,10 @@ body {
 				</div>
 			</div>
 
-			<div class="row justify-content-center d-flex align-items-center">
+			<center> 
 				<div class="col-lg-3 col-md-6 single-team mb-50">
 					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/1.jpg') }}" alt="">
 						<div class="align-items-end justify-content-center d-flex">
 							<div class="social-links">
 								<!-- <a href="#">
@@ -704,9 +718,651 @@ body {
 								</a> -->
 							</div>
 							<p>
-								ตำแหน่ง
+								หัวหน้าสำนักงานผู้อำนวยการศูนย์การแพทย์
 							</p>
-							<h4>ชื่อ นามสกุล</h4>
+							<h4>นางจิราพร เซี่ยงฉิน</h4>
+						</div>
+					</div>
+				</div>
+			</center>
+				
+			<div class="row justify-content-center d-flex align-items-center">
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								รักษาการหัวหน้างานสารบรรณ
+							</p>
+							<h4>นางสาวสุพัตรา บุญเกี๋ยงวงศ์</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								รักษาการหัวหน้างานงบประมาณและแผน
+							</p>
+							<h4>นายพัฒนพงศ์ สมุทรหล้า</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/4.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักเทคโนโลยีสารสนเทศ
+							</p>
+							<h4>นายทินกร ต๊ะผัด</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/5.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								วิศวกร
+							</p>
+							<h4>นายเมธาสิทธิ์ วงค์กันทิยะ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/6.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักจัดการงานทั่วไป (งานการเจ้าหน้าที่)
+							</p>
+							<h4>นายกฤษณะ นามศร</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/7.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักจัดการงานทั่วไป
+							</p>
+							<h4>นายกฤตภาศ หลักฐาน</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/8.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักบัญชี
+							</p>
+							<h4>นายฉัตรชัย สันธู</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/9.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักบัญชี
+							</p>
+							<h4>น.ส.สุพินพร เพ็ชรนิล</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/10.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักบัญชี
+							</p>
+							<h4>น.ส.พิชยาภรณ์ สมคิดศิริสกุล</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/11.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักจัดการงานทั่วไป (งานเวชระเบียน)
+							</p>
+							<h4>น.ส.บุญญาพร กินร</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นิติกร
+							</p>
+							<h4>นางสาวธิดารัตน์ เวียงคำ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักตรวจสอบภายใน
+							</p>
+							<h4>นางสาวมัณทกา จำปาคำ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักจัดการทั่วไป
+							</p>
+							<h4>ว่าที่ร้อยตรีวิชชา อยู่ศิริ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักจัดการทั่วไป (งานพัสดุ)
+							</p>
+							<h4>นางสาวดนุดา อนุสาสนนันท์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักจัดการทั่วไป (พัสดุ)
+							</p>
+							<h4>นางสาวศิริวรินทร์ เตชะนา</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักจัดการทั่วไป (พัสดุ)
+							</p>
+							<h4>นายพัลลภ ใจยม</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักจัดการทั่วไป (งานพัสดุ)
+							</p>
+							<h4>นางสาวกนกพร กองไชย</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								เจ้าพนักงานบริการทั่วไป
+							</p>
+							<h4>นายเมธินทร์ ภิญโญ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								คนงาน
+							</p>
+							<h4>นายน้อย ปอนสืบ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								คนงาน
+							</p>
+							<h4>นายกรณ์โชตน์ อนันต์ศิริกมล</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								คนงาน
+							</p>
+							<h4>นางไข่แก้ว อุยานะ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พนักงานขับรถยนต์
+							</p>
+							<h4>นายสุริยา กาใจ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/hoffice/none.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พนักงานขับรถยนต์พยาบาลฉุกเฉิน
+							</p>
+							<h4>นายอัครเดช คำอินต๊ะ</h4>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+	<!------------------------------------------------------------------------------------------------------------ End team Area -->
+
+	<!------------------------------------------------------------------------------------------------------------- Start team Area -->
+	<section class="team-area section_gap">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap">
+				<div class="col-lg-12">
+					<h1>ฝ่ายการพยาบาล</h1>
+					<p> </p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center d-flex align-items-center">
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/1.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาลเวชปฏิบัติทั่วไป
+							</p>
+							<h4>นางสาววริศรา ใสสม</h4>
 						</div>
 					</div>
 				</div>
@@ -714,7 +1370,7 @@ body {
 				
 				<div class="col-lg-3 col-md-6 single-team mb-50">
 					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/2.jpg') }}" alt="">
 						<div class="align-items-end justify-content-center d-flex">
 							<div class="social-links">
 								<!-- <a href="#">
@@ -731,14 +1387,14 @@ body {
 								</a> -->
 							</div>
 							<p>
-								ตำแหน่ง
+								พยาบาลเวชปฏิบัติฉุกเฉิน
 							</p>
-							<h4>ชื่อ นามสกุล</h4>
+							<h4>นายพยนต์ ดวงทิพย์</h4>
 						</div>
 					</div>
 				</div>				<div class="col-lg-3 col-md-6 single-team mb-50">
 					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/3.jpg') }}" alt="">
 						<div class="align-items-end justify-content-center d-flex">
 							<div class="social-links">
 								<!-- <a href="#">
@@ -755,14 +1411,1305 @@ body {
 								</a> -->
 							</div>
 							<p>
-								ตำแหน่ง
+								พยาบาลวิชาชีพ
 							</p>
-							<h4>ชื่อ นามสกุล</h4>
+							<h4>นางสาวรัติกาล คำอ้าย</h4>
+						</div>
+					</div>
+				</div>				
+				
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/4.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาลเวชปฏิบัติการบำบัดทดแทนไต
+							</p>
+							<h4>นางวิไลรัตน์ ปิงเมือง</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/5.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวกนกพร สิงห์ฆะราช</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/6.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวณัฐริกา อุ่นเรือน</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/7.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวนฤภร สินธุพงษ์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/8.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวรัตน์กาญจน์ อานันท์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/9.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาววรางคณา ไพรพนาพันธ์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/10.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวณัฐฐินันท์ ชัยวรรณ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/11.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวกาญญารัตน์ สืบด้วง</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/12.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวปาณิสรา ไชยราช</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/13.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวปพิชญา ไชยแสงคำ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/14.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวสุภาวดี คนสูง</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/15.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวจุฬารัตน์ เครือแก้ว</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/16.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวนริศรา แซ่คู</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/17.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวภัทราพร กันหา</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/18.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวรัชดาภรณ์ ลีมา</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/19.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวณัฐณิชา พร้อมสุข</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/20.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวธิวราพร เปลี่ยนศรี</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/21.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวทัญญารัตน์ ศรีสวัสดิ์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/22.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวรุ่งรวี พันธุ์ขาวสกุล</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/23.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวรัญชิดา โอภาสเสถียร</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/24.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวภัทราพร ใจซื่อ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/25.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวสุวนันท์ คีรีธีรกุล</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/26.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวทศพร แสนศรีเชาวพันธ์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/27.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวรัตนาภรณ์ กาปัญญา</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/28.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวปิยรัตน์ ขวดแก้ว</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/29.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวประภัสสร ศักดิ์แสน</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/30.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวปวีญา เผ่าดี</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/31.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาววราภรณ์ มั่นกุง</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/32.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาววราภรณ์ ยศน้อย</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/33.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวชนากานต์ น้ำพี้</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/34.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวธัญญลักษณ์ บัวเทศ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/35.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวพัชรินทร์ อิ่นคำ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/36.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาววราภรณ์ ศิริสุวรรณ์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/37.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวอรดี มารดาวงศ์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/38.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวกนกวรรณ จันทะเลิศ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/39.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวกนกวรรณ เบ็ญชา</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/40.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวจิณห์นิภา เที่ยงทุกข์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/41.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวสุภาพร หงษ์คอย</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/42.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาววราพิชญ์ ม่วงเส็ง</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/43.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวอมิตา เทพาชุมภู</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/44.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวศศิธร พุทธิมา</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/45.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นายเอกภพ นิพิธคุณ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/46.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นายมานพ แสนคำ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/47.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวจตุพร จันทร์วงศ์</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/48.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวปรารถนา ดวงสิงห์คำ</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/49.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวทักษพร สิทธิวัง</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/nurse/50.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								พยาบาล
+							</p>
+							<h4>นางสาวเมวียา ศิริกาศ</h4>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End team Area -->
+
+	<!-- Start team Area -->
+	<section class="team-area section_gap">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap">
+				<div class="col-lg-12">
+					<h1>ฝ่ายการแพทย์แผนจีน</h1>
+					<p> </p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center d-flex align-items-center">
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/cn/1.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนจีน
+							</p>
+							<h4>พจ.แสงชัย วงศ์มานะกูล</h4>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/cn/2.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนจีน
+							</p>
+							<h4>พจ.มนธิชา กัลยาลือ</h4>
 						</div>
 					</div>
 				</div>				<div class="col-lg-3 col-md-6 single-team mb-50">
 					<div class="thumb">
-						<img class="img-fluid" src="{{ url_for('static',filename='img/t5.jpg') }}" alt="">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/cn/3.jpg') }}" alt="">
 						<div class="align-items-end justify-content-center d-flex">
 							<div class="social-links">
 								<!-- <a href="#">
@@ -779,9 +2726,140 @@ body {
 								</a> -->
 							</div>
 							<p>
-								ตำแหน่ง
+								แพทย์แผนจีน
 							</p>
-							<h4>ชื่อ นามสกุล</h4>
+							<h4>พจ.ประภาพร ตุลวัฒนกุล</h4>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/cn/4.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนจีน
+							</p>
+							<h4>พจ.พงศ์นเรศ แจ้งพรมมา</h4>
+						</div>
+					</div>
+				</div>
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/cn/5.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนจีน
+							</p>
+							<h4>พจ.ปุณยวีร์ คำไทย</h4>
+						</div>
+					</div>
+				</div>
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/cn/6.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนจีน
+							</p>
+							<h4>พจ.นฤมล บูรพา</h4>
+						</div>
+					</div>
+				</div>
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/cn/7.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนจีน
+							</p>
+							<h4>พจ.ณัฐา พิพัฒน์ชลธี</h4>
+						</div>
+					</div>
+				</div>
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/cn/8.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนจีน
+							</p>
+							<h4>พจ.ธนภัทร สิทธิอัฐกร</h4>
 						</div>
 					</div>
 				</div>
@@ -789,6 +2867,1173 @@ body {
 		</div>
 	</section>
 	<!-- End team Area -->
+
+	<!-- Start team Area -->
+	<section class="team-area section_gap">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap">
+				<div class="col-lg-12">
+					<h1>ฝ่ายการแพทย์แผนไทยประยุกต์</h1>
+					<p> </p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center d-flex align-items-center">
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/1.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.ภากรณ์ ภู่สุวรรณ</h4>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/2.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.มนชนก ชูวรรธนะปกรณ์</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/3.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.ระวีวรรณ สุนันต๊ะ</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/4.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.ปาลิกา เวชกุล</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/5.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.วิริญญา เมืองช้าง</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/6.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.นาฎนิดา จันทราช</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/7.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.พงศธร ศิลาเงิน</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/8.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.วรรณิตา สกุลวัฒนะ</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/9.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.กิ่งกนก รักษนาเวศ</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/10.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.เก่ง ชัยขนะ</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/11.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.ผาณิต ศรีสุทธะ</h4>
+						</div>
+					</div>
+				</div>	
+
+								
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/th/12.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								แพทย์แผนไทยประยุกต์
+							</p>
+							<h4>พทป.วิชิดา หล้าสมศรี</h4>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+	<!-- End team Area -->
+
+		<!-- Start team Area -->
+		<section class="team-area section_gap">
+			<div class="container">
+				<div class="row justify-content-center section-title-wrap">
+					<div class="col-lg-12">
+						<h1>ฝ่ายการบริการเภสัชกรรม</h1>
+						<p> </p>
+					</div>
+				</div>
+	
+				<div class="row justify-content-center d-flex align-items-center">
+					<div class="col-lg-3 col-md-6 single-team mb-50">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ url_for('static',filename='img/doc/pa/1.jpg') }}" alt="">
+							<div class="align-items-end justify-content-center d-flex">
+								<div class="social-links">
+									<!-- <a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-behance"></i>
+									</a> -->
+								</div>
+								<p>
+									เภสัชกร
+								</p>
+								<h4>รศ.ภญ.ดร.บุษบง จำเริญดารารัศมี</h4>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="col-lg-3 col-md-6 single-team mb-50">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ url_for('static',filename='img/doc/pa/2.jpg') }}" alt="">
+							<div class="align-items-end justify-content-center d-flex">
+								<div class="social-links">
+									<!-- <a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-behance"></i>
+									</a> -->
+								</div>
+								<p>
+									เภสัชกร
+								</p>
+								<h4>อ.ภก.องอาจ มณีใหม่</h4>
+							</div>
+						</div>
+					</div>
+
+										
+					<div class="col-lg-3 col-md-6 single-team mb-50">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ url_for('static',filename='img/doc/pa/3.jpg') }}" alt="">
+							<div class="align-items-end justify-content-center d-flex">
+								<div class="social-links">
+									<!-- <a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-behance"></i>
+									</a> -->
+								</div>
+								<p>
+									เภสัชกร
+								</p>
+								<h4>อ.ภญ.จันทิมา ชูรัศมี</h4>
+							</div>
+						</div>
+					</div>
+
+										
+					<div class="col-lg-3 col-md-6 single-team mb-50">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ url_for('static',filename='img/doc/pa/none.jpg') }}" alt="">
+							<div class="align-items-end justify-content-center d-flex">
+								<div class="social-links">
+									<!-- <a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-behance"></i>
+									</a> -->
+								</div>
+								<p>
+									เภสัชกร
+								</p>
+								<h4>อ.ภก.กีรติ เก่งกล้า</h4>
+							</div>
+						</div>
+					</div>
+
+										
+					<div class="col-lg-3 col-md-6 single-team mb-50">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ url_for('static',filename='img/doc/pa/none.jpg') }}" alt="">
+							<div class="align-items-end justify-content-center d-flex">
+								<div class="social-links">
+									<!-- <a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-behance"></i>
+									</a> -->
+								</div>
+								<p>
+									เภสัชกร
+								</p>
+								<h4>อ.ภญ.ปรียเนตร วิไลรัตน์</h4>
+							</div>
+						</div>
+					</div>
+
+										
+					<div class="col-lg-3 col-md-6 single-team mb-50">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ url_for('static',filename='img/doc/pa/none.jpg') }}" alt="">
+							<div class="align-items-end justify-content-center d-flex">
+								<div class="social-links">
+									<!-- <a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-behance"></i>
+									</a> -->
+								</div>
+								<p>
+									เภสัชกร
+								</p>
+								<h4>นายพิชญุตม์ รัตนธัญพัทธ์</h4>
+							</div>
+						</div>
+					</div>
+
+										
+					<div class="col-lg-3 col-md-6 single-team mb-50">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ url_for('static',filename='img/doc/pa/7.jpg') }}" alt="">
+							<div class="align-items-end justify-content-center d-flex">
+								<div class="social-links">
+									<!-- <a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-behance"></i>
+									</a> -->
+								</div>
+								<p>
+									เภสัชกร
+								</p>
+								<h4>นางสาวนพมาศ แก้วใจบุญ</h4>
+							</div>
+						</div>
+					</div>
+
+										
+					<div class="col-lg-3 col-md-6 single-team mb-50">
+						<div class="thumb">
+							<img class="img-fluid" src="{{ url_for('static',filename='img/doc/pa/8.jpg') }}" alt="">
+							<div class="align-items-end justify-content-center d-flex">
+								<div class="social-links">
+									<!-- <a href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-dribbble"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-behance"></i>
+									</a> -->
+								</div>
+								<p>
+									เภสัชกร
+								</p>
+								<h4>นายวรัญชัย วงษ์วรศรีโรจน์</h4>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End team Area -->
+
+		
+			<!-- Start team Area -->
+	<section class="team-area section_gap">
+		<div class="container">
+			<div class="row justify-content-center section-title-wrap">
+				<div class="col-lg-12">
+					<h1>ฝ่ายสหเวชกรรม</h1>
+					<p> </p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center d-flex align-items-center">
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/saha/1.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								ผู้ทรงคุณวุฒิ
+							</p>
+							<h4>ผศ.ดร. ยุทธนา หมั่นดี</h4>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="col-lg-3 col-md-6 single-team mb-50">
+					<div class="thumb">
+						<img class="img-fluid" src="{{ url_for('static',filename='img/doc/saha/2.jpg') }}" alt="">
+						<div class="align-items-end justify-content-center d-flex">
+							<div class="social-links">
+								<!-- <a href="#">
+									<i class="fa fa-facebook"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-dribbble"></i>
+								</a>
+								<a href="#">
+									<i class="fa fa-behance"></i>
+								</a> -->
+							</div>
+							<p>
+								นักเทคนิคการแพทย์
+							</p>
+							<h4>ทนพญ.ทิพวรรณ นนทวงศ์</h4>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End team Area -->
+
+				<!-- Start team Area -->
+				<section class="team-area section_gap">
+					<div class="container">
+						<div class="row justify-content-center section-title-wrap">
+							<div class="col-lg-12">
+								<h1>โรงพยาบาลทันตกรรม</h1>
+								<p> </p>
+							</div>
+						</div>
+			
+						<div class="row justify-content-center d-flex align-items-center">
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											Epidemiology ทันตแพทยศาสตรบัณฑิต
+										</p>
+										<h4>รศ.ทพ.ดร.คมสรรพ์ บุณยสิงห์</h4>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											วิทยาเอ็นโดดอนต์ ทันตแพทยศาสตร์บัณฑิต
+										</p>
+										<h4>ศ.คลินิก ทพญ.วราภรณ์ ฐิตินันทพันธุ์</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											Oral Science ทันตแพทยศาสตรบัณฑิต
+										</p>
+										<h4>ผศ.ทพ.พิชาญ ชำนาญนิธิอรรถ</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											วิทยาการวินิจฉัยโรคช่องปาก Pathology
+										</p>
+										<h4>รศ.ทพญ.จีราภา บุณยสิงห์</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพญ.ศันสณี รัชชกูล</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพ.เฉลิมชัย วุฒิพิทยามงคล</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพ.อุทัยวรรณ กาญจนกามล</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพ.ดลธรรม พรหมเสน</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพ.พรพัฒน์ ธีรโสภรณ</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพญ.ยุพาภรณ์ โพธิ์นอก</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพ.สุริยันต์ ธรรมราช</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ผศ.ทพ.สัญญา เรืองสิทธิ์</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ผศ.ทพ.ศิรินันท์ วิเศษสินธุ์</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพญ.ณัฐณิชา พิพัฒน์บุณยารัตน์</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพญ.วิลาสินี วิจิตรานนท์</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพ.ตรัยธาวิต นาคสกุล</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพ.ทศพล อินประโคน</h4>
+									</div>
+								</div>
+							</div>			
+
+														
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/none.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											เจ้าหน้าที่บริหารงานทั่วไป
+										</p>
+										<h4>ทพญ.มนพร มณี</h4>
+									</div>
+								</div>
+							</div>			
+				
+							<div class="col-lg-3 col-md-6 single-team mb-50">
+								<div class="thumb">
+									<img class="img-fluid" src="{{ url_for('static',filename='img/doc/hp/19.jpg') }}" alt="">
+									<div class="align-items-end justify-content-center d-flex">
+										<div class="social-links">
+											<!-- <a href="#">
+												<i class="fa fa-facebook"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-twitter"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-dribbble"></i>
+											</a>
+											<a href="#">
+												<i class="fa fa-behance"></i>
+											</a> -->
+										</div>
+										<p>
+											---
+										</p>
+										<h4>ผศ.ทพ.สัญญา เรืองสิทธิ์</h4>
+									</div>
+								</div>
+							</div>	
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End team Area -->
+
 
 <!-- start footer Area -->
 	<footer class="footer-area section_gap">
