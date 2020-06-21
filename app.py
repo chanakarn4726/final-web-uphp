@@ -73,6 +73,7 @@ def singleblog():
 def login():
     if request.method == 'POST':
         session.pop('user_id', None)
+        
         username = request.form['admin']
         password = request.form['root']
         
