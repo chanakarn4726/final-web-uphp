@@ -43,7 +43,7 @@ def singleblog():
 
 @app.route("/login", methods=[POST])
 def login():
-    if request.method == 'POST'
+    if request.method == 'POST':
         return '<h1>error</h1>'
     else:
         return render_template('login.html')
