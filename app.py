@@ -45,6 +45,13 @@ def singleblog():
 def login():
     return render_template('login.html')
 
+@app.route("/checkauth ", methods=['POST'])
+def checkauth():
+    name = request.form['name']
+    root = request.form['root']
+    return 'username : {} , password : {}'.format(name,root)
+
+
 @app.route("/edit")
 def edit():
    return render_template('edit.html')
