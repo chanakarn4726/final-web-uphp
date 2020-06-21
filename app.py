@@ -41,7 +41,7 @@ def blog():
 def singleblog():
     return render_template('single-blog.html')
 
-@app.route("/login", methods=[GET,POST])
+@app.route("/login", methods=['GET','POST'])
 def login():
     if request.method == 'GET':
         return render_template('login.html')
