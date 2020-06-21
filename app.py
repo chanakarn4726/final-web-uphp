@@ -49,7 +49,7 @@ def login():
 def checkauth():
     name = request.form['name']
     root = request.form['root']
-    return 'username : {} , password : {}'.format(name,root)
+    return '<h1>username : {} , password : {}<h1>'.format(name,root)
 
 
 @app.route("/edit")
