@@ -22,6 +22,7 @@ class User:
 
 users = []
 users.append(User(id=1, username='admin', password='root'))
+users.append(User(id=2, username='root', password='admin123'))
 
 # Home Page
 @app.route("/")
@@ -73,7 +74,7 @@ def singleblog():
 def login():
     if request.method == 'POST':
         session.pop('user_id', None)
-        
+
         username = request.form['admin']
         password = request.form['root']
         
