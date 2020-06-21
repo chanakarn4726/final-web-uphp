@@ -47,9 +47,9 @@ def login():
 
 @app.route("/checkauth ", methods=['POST'])
 def checkauth():
-    name = request.form['name']
+    admin = request.form['admin']
     root = request.form['root']
-    return '<h1>username : {}. password : {}.<h1>'.format(name,root)
+    return '<h1>username : {}. password : {}.<h1>'.format(admin,root)
 
 
 @app.route("/edit")
