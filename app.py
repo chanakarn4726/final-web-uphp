@@ -41,9 +41,12 @@ def blog():
 def singleblog():
     return render_template('single-blog.html')
 
-@app.route("/login")
+@app.route("/login", methods=[POST])
 def login():
-    return render_template('login.html')
+    if request.method == 'POST'
+        return '<h1>error</h1>'
+    else:
+        return render_template('login.html')
 
 @app.route("/checkauth ", methods=['GET','POST'])
 def checkauth():
@@ -51,10 +54,11 @@ def checkauth():
         admin = request.form['admin']
         root = request.form['root']
         if admin == "admin" and root == "root":
-            return render_template(url_for('edit'))
+            return redirect(url_for('edit'))
         else:
-            return render_template(url_for('login'))
-
+            return redirect(url_for('login'))
+    else:
+        return redirect(url_for('login'))
 
 @app.route("/edit")
 def edit():
