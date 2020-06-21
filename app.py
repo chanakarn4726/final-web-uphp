@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import render_template, request, redirect, url_for, session
+from flask import render_template, request, redirect, url_for, session, g
 from datetime import timedelta
 from flask_sqlalchemy import SQLAlchemy
 
@@ -81,7 +81,7 @@ def login():
         user = [x for x in users if x.username == username][0]
         print(user)
         if user and user.password == password:
-            session['u_id'] == user.id
+            # session['user_id'] == user.id
 
             return redirect(url_for('edit'))
 
