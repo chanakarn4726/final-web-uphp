@@ -81,7 +81,7 @@ def login():
         user = [x for x in users if x.username == username][0]
         print(user)
         if user and user.password == password:
-            session['user_id'] == user.id
+            session['u_id'] == user.id
 
             return redirect(url_for('edit'))
 
