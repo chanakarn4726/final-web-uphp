@@ -5,9 +5,18 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.secret_key = 'somesecretkeythatonlyishouldknow'
-# app.config[SQLALCHEMY_DATABASE_URI] = 'sqlite://'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config[SQLALCHEMY_DATABASE_URI] = 'sqlite:///db.sqlit3'
 
-# db.SQLAlchemy(app)
+db.SQLAlchemy(app)
+
+
+class home(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    topic = db.Column(db.String(100))
+    dis = db.Column(db.String(500))
+    image = db.Column(db.LargeBinary)
+    date = db.Column(db.DateTime, default=datetime.now)
 
 
 class User:
@@ -77,7 +86,7 @@ def login():
 
         username = request.form['admin']
         password = request.form['root']
-        
+
         user = [x for x in users if x.username == username][0]
         print(user)
         if user and user.password == password:
@@ -92,7 +101,7 @@ def login():
 
 @app.route("/edit")
 def edit():
-   return render_template('edit.html')
+    return render_template('edit.html')
 
 # @app.route("/#")
 # def #():
@@ -107,7 +116,6 @@ def edit():
 #   return render_template('#.html')
 
 
-    
 # Debug Code
 if __name__ == "__main__":
     # db.creat_all()
