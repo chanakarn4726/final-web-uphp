@@ -45,14 +45,15 @@ def singleblog():
 def login():
     return render_template('login.html')
 
-@app.route("/checkauth ", methods=['POST'])
+@app.route("/checkauth ", methods=['GET','POST'])
 def checkauth():
-    admin = request.form['admin']
-    root = request.form['root']
-    if admin == "admin" and root == "root":
-        return render_template('services.html')
-    else:
-        return '<h1>username : {}. password : {}.<h1>'.format(admin,root)
+    if request.method == 'POST':
+        admin = request.form['admin']
+        root = request.form['root']
+        if admin == "admin" and root == "root":
+            return url_for('edit')
+        else:
+            return url_for('login')
 
 
 @app.route("/edit")
