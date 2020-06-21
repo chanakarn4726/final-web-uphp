@@ -51,9 +51,9 @@ def checkauth():
         admin = request.form['admin']
         root = request.form['root']
         if admin == "admin" and root == "root":
-            return url_for('edit')
+            return render_template(url_for('edit'))
         else:
-            return url_for('login')
+            return render_template(url_for('login'))
 
 
 @app.route("/edit")
